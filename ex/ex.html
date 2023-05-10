@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+          .tit { text-align:center;}
+          #grid {
+            display:grid;
+            grid-template-columns: 100px 1fr;
+            }
+          ol {margin-top:2px;
+                        }
+        a {
+             text-decoration:none;
+             color:inherit;
+        }
+        li { 
+            font-weight :bold; 
+            
+        }
+        </style>
+    </head>
+    <body>
+        <div class="tit">
+        <input id="night_day" type="button" value="night" onclick="
+        if (document.querySelector('#night_day').value === 'night') {
+            document.querySelector('body').style.backgroundColor = 'black'; 
+            document.querySelector('body').style.color = 'white';
+            document.querySelector('#night_day').value = 'day';
+        } else {
+            document.querySelector('body').style.backgroundColor = 'white'; 
+            document.querySelector('body').style.color = 'black';
+            document.querySelector('#night_day').value = 'night';}
+             ">
+        <input type="text" onchange="alert('hi')">
+        <h3 style="margin-top:10px; color:white; background-color:coral;">Trip to Osaka</h3>
+        </div>
+        <div id="grid">
+        <img src="img1.jpg" width="100px" style="display:inline">
+            
+        <div style="font-size:13px"><ol>
+             <li><a href="when.html" target="_blank">When</a></li>
+             2023.05.09<br>
+             <li><a href="Where.html" target="_blank">Where</a></li>
+             Osaka/Tokyo, Japan<br>
+             <li><a href="How.html" target="_blank">How</a></li>
+             Jeju Air<br>
+             <li><a href="How.html" target="_blank">What</a></li>
+             Eat, Play, Love
+             </ol></div>
+        </div>
+    </body>
+</html> 

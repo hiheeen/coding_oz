@@ -1,0 +1,18 @@
+* {
+    color:plum;
+}
+p {
+    color :aquamarine;
+}
+.blue {
+    color:orange;
+}
+p.blue {
+    color : palegoldenrod;
+}
+.blue.dark {
+    color : blue;
+}
+#red {
+    color:red;
+}
